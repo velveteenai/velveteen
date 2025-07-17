@@ -1,6 +1,6 @@
 package main
 
-// ReverseString reverses the characters in a string.
+// ReverseString returns a new string with the characters of text in reverse order, preserving Unicode characters.
 func ReverseString(text string) string {
 	runes := []rune(text)
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
@@ -9,18 +9,18 @@ func ReverseString(text string) string {
 	return string(runes)
 }
 
-// CountWords returns the number of words in a sentence.
+// CountWords returns the number of words in the given sentence, splitting by whitespace.
 func CountWords(sentence string) int {
 	words := SplitWords(sentence)
 	return len(words)
 }
 
-// SplitWords splits a sentence into words by whitespace.
+// SplitWords returns a slice of words in the given sentence, splitting by whitespace.
 func SplitWords(sentence string) []string {
 	return Fields(sentence)
 }
 
-// Fields splits a string by whitespace (helper for CountWords).
+// Fields splits the input string into a slice of words separated by spaces, tabs, or newlines.
 func Fields(s string) []string {
 	var fields []string
 	field := ""
@@ -40,7 +40,7 @@ func Fields(s string) []string {
 	return fields
 }
 
-// CelsiusToFahrenheit converts Celsius temperature to Fahrenheit.
+// CelsiusToFahrenheit converts a temperature from Celsius to Fahrenheit and returns the result.
 func CelsiusToFahrenheit(celsius float64) float64 {
 	return (celsius * 9 / 5) + 32
 }
