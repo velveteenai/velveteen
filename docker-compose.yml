@@ -1,0 +1,16 @@
+version: "3.8"
+
+volumes:
+  go-modules:
+
+services:
+  velveteen:
+    container_name: velveteen.enova.test
+    build:
+      context: .
+    env_file: .env
+    volumes:
+      - .:/app
+      - go-modules:/go/pkg/mod
+    ports:
+      - 9000:9000

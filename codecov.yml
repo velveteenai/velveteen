@@ -1,0 +1,11 @@
+# Golden v0.1.0; please leave this in-place, see https://git.enova.com/devex/golden for more info.
+coverage:
+  status:
+    project:
+      default:
+        target: 80% # Leaving this blank falls back to "auto" and is good for projects just introducing Codecov.
+        threshold: 1%
+    patch:
+      default:
+        target: auto
+        informational: true

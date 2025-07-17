@@ -1,0 +1,27 @@
+# Golden v0.1.1; please leave this in-place, see https://git.enova.com/devex/golden for more info.
+
+# Project information
+site_name: velveteen
+site_description: test app
+site_author: developer-experience
+
+# Repository information
+repo_url: https://git.enova.com/devex/velveteen
+edit_uri: blob/main/docs
+
+# Navigation
+nav:
+  - Introduction: index.md
+  - Getting Started: getting-started.md
+  - Usage: usage.md
+  - Development Guide: development-guide.md
+  - Testing: testing.md
+  - Deployment: deployment.md
+  - Technical Information: technical-information.md
+  - Observability and Alerting: observability-and-alerting.md
+  - Reliability: reliability.md
+  - Maintenance and Evolution: maintenance-and-evolution.md
+  - Security and Permissions: security-and-permissions.md
+  - Business Impact: business-impact.md
+  - Support: support.md
+  - Additional Resources: additional-resources.md
